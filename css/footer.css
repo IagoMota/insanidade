@@ -8,17 +8,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
+    background-color: #222;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #ddd;
 }
 
 /* Footer */
 footer {
     position: relative;
-    background-color: #222;
     padding: 30px 0;
     overflow: hidden;
 }
@@ -36,7 +37,6 @@ footer {
 /* Conteúdo do Footer */
 .footer-content {
     flex: 1;
-    color: #fff;
 }
 
 .footer-logo {
@@ -45,10 +45,30 @@ footer {
     margin-bottom: 10px;
 }
 
+.footer-logo h1 {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-logo h1 span {
+    color: #f00;
+    text-shadow: 0 0 3px #000, 0 0 5px #f00;
+}
+
 .footer-logo p {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .footer-links ul {
@@ -63,22 +83,33 @@ footer {
 }
 
 .footer-links li:hover {
-    color: #ddd;
+    color: #f00;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .footer-social a {
     margin-right: 10px;
-    color: #fff;
 }
+
 
 .footer-social i {
     font-size: 20px;
-    transition: 0.3s ease-in-out;
+    color: #ddd;
+    transform: scale(1); /* Initial scale */
 }
 
 .footer-social a:hover i {
-    transform: scale(1.2);
-    color: #ddd;
+    transform: scale(1.2); /* Increased scale on hover */
+    color: #f00;
 }
 
 /* Fundo do Footer */
@@ -110,4 +141,10 @@ footer:hover .footer-background img {
     .footer-content {
         text-align: center;
     }
+}
+
+/* Animação de texto piscando */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }

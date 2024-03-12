@@ -5,6 +5,56 @@
     
 }
 body {
-    background-color: blueviolet;
+    background-color: #8400ff81;
     color: brown;
+    width: 95vw;
+    
+}
+
+.butão-um {
+    height: 260px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: aliceblue;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.botão-dois {
+    height: 260px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: aliceblue;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 90px;
+    cursor: pointer
+}
+button:hover {
+    color: black;
+    scale: 9.50;
+}
+
+i {
+    color: green;
+    border: solid black 5px;
+    box-shadow: blueviolet;
+}
+
+h1 {
+    color: blue;
+    border: solid black 2px;
+    box-shadow: gold;
+}
+
+h2{
+    color: brown;
+    border: solid black 2px;
+    box-shadow: grey;
 }

@@ -1,0 +1,45 @@
+.aleatorios {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.aleatorios:first-of-type{
+    top:150px;
+    left: 300px;
+    position: fixed;
+}
+.aleatorios:nth-of-type(2){
+    right: 0;
+    top: 250px;
+    
+}
+.aleatorios:last-of-type {
+    top:550px;
+    left: 300px;   
+}
+#happy-button {
+    width: 200px;
+}
+#happy-button button {
+    position: absolute;
+}
+#happy-button:hover  button{
+    left: 450px;
+}
+#tua-mae{
+    text-align: center;
+    position: absolute;
+    left: 600px;
+    overflow: hidden;
+    height: 300px;
+    top: 600px;
+    
+}
+#tua-mae h1 {
+    color: red;
+}
+#tua-mae img {
+    height: 60%;
+    width: 60%;
+}

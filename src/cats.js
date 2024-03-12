@@ -8,5 +8,13 @@ fetch(catsAPI)
             catPicture.src = picture.url
             catPicture.classList.add("cat")
             main.appendChild(catPicture)
+                    //ficou muito massa isso kkkkkk
+
+
+                    //Ja coloquei o miado KKKKKK é só clicar
+            catPicture.addEventListener("click", ()=>{
+                let snd = new Audio("../assets/sound.mp3")
+                snd.play()
+            })
         })
     )
